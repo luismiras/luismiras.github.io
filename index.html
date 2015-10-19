@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <div class="post-meta">
+          <b class="post__date">{{ post.date | date: "%b %-d, %Y" }}</b>
+          <b class="post__sep"> • </b>
+          <b class="post__author">{{ post.author }}</b>
+
+        </div>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

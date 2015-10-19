@@ -1,0 +1,14 @@
+# Site settings
+title: blog
+description: > 
+  security related notes
+url: "http://luismiras.github.io" 
+twitter_username: _luism
+github_username:  luismiras
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+
+kramdown:
+    toc_levels:   1..2
